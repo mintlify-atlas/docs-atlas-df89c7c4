@@ -1,0 +1,154 @@
+{
+  "projectType": "saas",
+  "projectName": "El Castillo del Pan",
+  "projectDescription": "A comprehensive bakery management system with inventory tracking, order management, production planning, and multi-role dashboards.",
+  "theme": "almond",
+  "primaryColor": "#D97706",
+  "lightColor": "#FCD34D",
+  "darkColor": "#92400E",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": ["introduction", "overview", "quickstart"]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/dashboard",
+              "features/orders",
+              "features/inventory",
+              "features/production",
+              "features/recipes",
+              "features/reports"
+            ]
+          },
+          {
+            "group": "User Management",
+            "pages": [
+              "users/roles",
+              "users/authentication",
+              "users/employees",
+              "users/customers"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": ["api/overview", "api/authentication"]
+          },
+          {
+            "group": "Products",
+            "pages": [
+              "api/products/overview",
+              "api/products/categories",
+              "api/products/endpoints"
+            ]
+          },
+          {
+            "group": "Inventory",
+            "pages": [
+              "api/inventory/ingredients",
+              "api/inventory/categories",
+              "api/inventory/suppliers"
+            ]
+          },
+          {
+            "group": "Orders",
+            "pages": [
+              "api/orders/customer-orders",
+              "api/orders/supplier-orders",
+              "api/orders/status"
+            ]
+          },
+          {
+            "group": "Production",
+            "pages": [
+              "api/production/recipes",
+              "api/production/production-logs",
+              "api/production/output-orders"
+            ]
+          },
+          {
+            "group": "Users",
+            "pages": [
+              "api/users/employees",
+              "api/users/customers",
+              "api/users/admin"
+            ]
+          },
+          {
+            "group": "Reports",
+            "pages": [
+              "api/reports/statistics",
+              "api/reports/sales",
+              "api/reports/inventory"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Deployment",
+        "groups": [
+          {
+            "group": "Setup",
+            "pages": [
+              "deployment/installation",
+              "deployment/configuration",
+              "deployment/database"
+            ]
+          },
+          {
+            "group": "Deploy",
+            "pages": [
+              "deployment/frontend",
+              "deployment/backend",
+              "deployment/production"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Multi-role dashboards (Admin, Employee, Customer)",
+    "Comprehensive inventory management with ingredient tracking",
+    "Order processing and status management",
+    "Recipe management with ingredient calculations",
+    "Production planning and tracking",
+    "Supplier order management",
+    "Sales statistics and reports",
+    "JWT-based authentication and authorization",
+    "Shopping cart and checkout system",
+    "Real-time stock monitoring"
+  ],
+  "publicApiSurface": [
+    "POST /api/auth/login - User authentication",
+    "POST /api/auth/registro/cliente - Customer registration",
+    "POST /api/auth/registro/empleado - Employee registration",
+    "GET /productos - List products",
+    "POST /productos - Create product",
+    "GET /inventario/ingredientes - List ingredients",
+    "POST /inventario/ingredientes/store - Create ingredient",
+    "GET /inventario/proveedores - List suppliers",
+    "POST /inventario/pedidos-proveedores/store - Create supplier order",
+    "GET /pedidos - List customer orders",
+    "POST /pedidos - Create customer order",
+    "GET /inventario/recetas - List recipes",
+    "POST /inventario/recetas/store - Create recipe",
+    "POST /inventario/produccion/store - Register production",
+    "GET /empleados - List employees",
+    "GET /clientes - List customers",
+    "GET /estadisticas - Get statistics",
+    "GET /reportes/ordenes-salida - List output orders",
+    "POST /api/carrito/agregar/{id} - Add to cart",
+    "POST /api/carrito/checkout - Checkout cart"
+  ]
+}
